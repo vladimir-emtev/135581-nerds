@@ -1,45 +1,53 @@
-<DOCTYPE html>
+<!DOCTYPE html>
+<html>
   <head>
     <meta charset="utf-8">
     <title>Нёрдс</title>
   </head>       
   <body>
     <header class="main-header">
-      <div class="top-menu">
-        <ul>
-          <li><a href="#">студия</a></li>
-          <li><a href="#">клиенты</a></li>
-          <li><a href="#">магазин</a></li>
-          <li><a href="#">контакты</a></li>
-          <li><a href="#" class="cart-link">корзина</a></li>
-        </ul>
-      <h1>добро пожаловать в магазин готовых макетов</h1>
-     </div>
+      <div class="container">
+        <nav class="main-navigation">
+          <div class="main-logo">
+            <img src="http://placehold.it/100x150">
+          </div>
+          <ul>
+            <li><a href="#">студия</a></li>
+            <li><a href="#">клиенты</a></li>
+            <li><a href="#">магазин</a></li>
+            <li><a href="#">контакты</a></li>
+            <li><a href="#" class="cart-link">корзина</a></li>
+          </ul>
+        </nav>
+        <h1>добро пожаловать в магазин готовых макетов</h1>
+      </div>
     </header>
 
-    <div class="container">
-    	<div class="side-bar">
-	    	<h2>стоимость:</h2>
+    <main class="container">
+    	<div class="filter">
+	    	<b>стоимость:</b>
 	    	<div class="range-controls">
-	      	<div class="scale">
-	      		<div class="bar">
-	      		</div>
-					</div>
-				</div>
-	    	<div class="price-controls">
-	       	от<input class="min-price" type="text" value="0">  
-	       	до<input class="max-price" type="text" value="15 000">
-	    	</div>
+          <div class="scale">
+            <div class="bar"></div>
+          </div>
+          <div class="toggle min-toggle"></div>
+          <div class="toggle max-toggle"></div>
+        </div>
+        <form>
+	    	  <div class="price-controls">
+	       	  от <input class="min-price" type="text" value="0">
+	       	  до <input class="max-price" type="text" value="15 000">
+	    	  </div>
 	    	
-	    	<h2>сетка:</h2>
-	   		<form>
-	    		<input name="site-layout" type="radio" value="adaptive" id="adaptive-layout"><label for="adaptive-layout">адаптивная</label>
-	    		<input name="site-layout" type="radio" value="fixed" id="fixed-layout"><label for="fixed-layout">Фиксированная</label>
-	    		<input name="site-layout" type="radio" value="rubber" id="rubber-layout"><label for="rubber-layout">Резиновая</label>
-	    	</form>
-	     		
-	     	<h2>особенности:</h2>
-	     	<form>
+	    	  <b>сетка:</b>
+	   		  <ul>
+	    		  <li><input name="site-layout" type="radio" value="adaptive" id="adaptive-layout"><label for="adaptive-layout">адаптивная</label></li>
+	    		  <li><input name="site-layout" type="radio" value="fixed" id="fixed-layout"><label for="fixed-layout">Фиксированная</label></li>
+	    		  <li><input name="site-layout" type="radio" value="rubber" id="rubber-layout"><label for="rubber-layout">Резиновая</label></li>
+	     		</ul>
+
+	     	  <b>особенности:</b>
+
 		    	<ul class="features-list"> 
 		    		<li><input type="checkbox" id="item-1" checked><label for="item-1">слайдер</label></li>
 		    		<li><input type="checkbox" id="item-2"><label for="item-2">Блок преимуществ</label></li>
@@ -47,126 +55,95 @@
 		    		<li> <input type="checkbox" id="item-4"><label for="item-4">Галерея</label></li>
 		    		<li><input type="checkbox" id="item-5"><label for="item-5">Корзина</label></li>
 		    	</ul>
+		    <button class="btn" type="submit">Показать</button>
+        
 		    </form>
-	      
-	      <a hrev="#" class="btn">показать</a>
-  		
-  		</div>
+	    </div>  
+
     	<div class="content">
     		<div class="sort-links">
-      		<b>сортировать:</b>
-		      <a href="#" class="btn">по цене</a>
-		      <a href="#" class="btn">по типу</a>
-		      <a href="#" class="btn">по функционалу</a>
-		      <a ref="#" class="btn" value="bottom"></a>
-		      <a ref="#" class="btn" value="top"></a>
+      		<span>сортировать:</span>
+		      <a href="#" class="sorting">по цене</a>
+		      <a href="#" class="sorting">по типу</a>
+		      <a href="#" class="sorting">по функционалу</a>
+		      <a href="#" class="sorting-down"></a>
+		      <a href="#" class="sorting-up"></a>
 		    </div>
     		
-    		<article class="catalog-item">
-	        <div class="slider">
-	          <div class="slide-navigation">
-	            <form>
-	              <input name="#" type="radio" value="left">
-	              <input name="#" type="radio" value="middle">
-	              <input name="#" type="radio" value="right">
-	            </form>
+    		<section class="catalog">
+    		  <article class="catalog-item">
+	          <div class="item-head">
+	            <span class="little-circle"></span>
+	            <span class="little-circle"></span>
+	            <span class="little-circle"></span>
 	          </div>
 	          
-	          <div id="slide1">
+	          <div class="thumbnail">
 	            <img src="http://placehold.it/150x100">
 	          </div>
-	  
-	          <div id="slide2"></div>
-	          <div id="slide3"></div>
-	        </div>
-        </article>
+          </article>
           
-    		<article class="catalog-item">
-	        <div class="slider">
-	          <div class="slide-navigation">
-	            <form>
-	              <input name="#" type="radio" value="left">
-	              <input name="#" type="radio" value="middle">
-	              <input name="#" type="radio" value="right">
-	            </form>
+    		  <article class="catalog-item">
+	          <div class="item-head">
+	            <span class="little-circle"></span>
+	            <span class="little-circle"></span>
+	            <span class="little-circle"></span>
 	          </div>
-	          <div id="slide1">
-	              <img src="http://placehold.it/150x100">
+	          
+	          <div class="thumbnail">
+	            <img src="http://placehold.it/150x100">
 	          </div>
-	          <div id="slide2"></div>
-	          <div id="slide3"></div>
-	        </div>
-        </article>
+          </article>
      
-     		<article class="catalog-item">
-    
-    			<div class="slider">
-	          <div class="slide-navigation">
-	            <form>
-	              <input name="#" type="radio" value="left">
-	              <input name="#" type="radio" value="middle">
-	              <input name="#" type="radio" value="right">
-	            </form>
+     		  <article class="catalog-item">
+	          <div class="item-head">
+	            <span class="little-circle"></span>
+	            <span class="little-circle"></span>
+	            <span class="little-circle"></span>
 	          </div>
-	          <div id="slide1">
+	          
+	          <div class="thumbnail">
 	            <img src="http://placehold.it/150x100">
 	          </div>
-	          <div id="slide2"></div>
-	          <div id="slide3"></div>
-        	</div>
-      	</article>
+          </article>
 
-    		<article class="catalog-item">
-    			<div class="slider">
-	          <div class="slide-navigation">
-	            <form>
-	              <input name="#" type="radio" value="left">
-	              <input name="#" type="radio" value="middle">
-	              <input name="#" type="radio" value="right">
-	            </form>
+    		  <article class="catalog-item">
+	          <div class="item-head">
+	            <span class="little-circle"></span>
+	            <span class="little-circle"></span>
+	            <span class="little-circle"></span>
 	          </div>
-	          <div id="slide1">
+	          
+	          <div class="thumbnail">
 	            <img src="http://placehold.it/150x100">
 	          </div>
-	          <div id="slide2"></div>
-	          <div id="slide3"></div>
-        	</div>
-      	</article>
+          </article>
 
-      	<article class="catalog-item">
-    			<div class="slider">
-	          <div class="slide-navigation">
-	            <form>
-	              <input name="#" type="radio" value="left">
-	              <input name="#" type="radio" value="middle">
-	              <input name="#" type="radio" value="right">
-	            </form>
+      	  <article class="catalog-item">
+	          <div class="item-head">
+	            <span class="little-circle"></span>
+	            <span class="little-circle"></span>
+	            <span class="little-circle"></span>
 	          </div>
-	          <div id="slide1">
+	          
+	          <div class="thumbnail">
 	            <img src="http://placehold.it/150x100">
 	          </div>
-	          <div id="slide2"></div>
-	          <div id="slide3"></div>
-        	</div>
-      	</article>
+          </article>
 
-      	<article class="catalog-item">
-    			<div class="slider">
-	          <div class="slide-navigation">
-	            <form>
-	              <input name="#" type="radio" value="left">
-	              <input name="#" type="radio" value="middle">
-	              <input name="#" type="radio" value="right">
-	            </form>
+      	  <article class="catalog-item">
+	          <div class="item-head">
+	            <span class="little-circle"></span>
+	            <span class="little-circle"></span>
+	            <span class="little-circle"></span>
 	          </div>
-	          <div id="slide1">
+	          
+	          <div class="thumbnail">
 	            <img src="http://placehold.it/150x100">
 	          </div>
-	          <div id="slide2"></div>
-	          <div id="slide3"></div>
-        	</div>
-      	</article>
-    
+          </article>
+        </section>
+
     		<div class="pagination">
 		      <a href="#">1</a>
 		      <a href="#">2</a>
@@ -177,7 +154,7 @@
       <div class="map">
        	<img src="http://placehold.it/500x200">
      	</div>
-    </div>
+    </main>
     <footer class="main-footer">
       <div class="social-links">
         <a class="social-btn social-btn-vk"></a>   

@@ -1,63 +1,69 @@
-<DOCTYPE html>
+<!DOCTYPE html>
+<html>
   <head>
     <meta charset="utf-8">
     <title>Нёрдс</title>
   </head>       
   <body>
     <header class="main-header">
-      <ul class="top-menu">
-        <li><a href="#">студия</a></li>
-        <li><a href="#">клиенты</a></li>
-        <li><a href="#">магазин</a></li>
-        <li><a href="#">контакты</a></li>
-        <li><a href="#" class="cart-link">корзина</a></li>
-      </ul>  
-      <div class="slider">
-        <div class="slide-navigation">
-          <form>
-            <input name="#" type="radio" value="left">
-            <input name="#" type="radio" value="middle">
-            <input name="#" type="radio" value="right">
-          </form>
-        </div>
-        <div id="slide1">
-          <div class="slider-left">
-            <h2>Долго,дорого,скрпулезно.</h2>
-            <p>математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-            <a href="#" class="btn">узнать больше</a>
-          </div>
-          <div class="pc-images">
+      <div class="container">
+        <nav class="main-navigation">
+          <div class="main-logo">
             <img src="http://placehold.it/100x150">
           </div>
+          <ul>
+            <li><a href="#">студия</a></li>
+            <li><a href="#">клиенты</a></li>
+            <li><a href="#">магазин</a></li>
+            <li><a href="#">контакты</a></li>
+            <li><a href="#" class="cart-link">корзина</a></li>
+          </ul>
+        </nav>  
+        <div class="slider">
+          <div class="slide-navigation">
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+          </div>
+          <div id="slide1">
+            <div class="slider-left">
+              <h2>Долго,дорого,скрпулезно.</h2>
+              <p>математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+              <a href="#" class="btn">узнать больше</a>
+            </div>
+            <div class="pc-images">
+              <img src="http://placehold.it/100x150">
+            </div>
+          </div>
+          <div id="slide2"></div>
+          <div id="slide3"></div>
         </div>
-        <div id="slide2"></div>
-        <div id="slide3"></div>
       </div>
     </header>
     
-    <div class="content">
+    <main class="container">
       <div class="feature-items">
-        <article class="feature-item">
+        <section class="feature-item">
           <img src="http://placehold.it/150x100">
-          <h3>веб-сайты</h3>
+          <b>веб-сайты</b>
           <p>мир никогда не будет прежним<br>
           после того как увидит ваш сайт!</p>
           <a href="#" class="btn">заказать</a>
-        </article> 
+        </section> 
                
-        <article class="feature-item">
+        <section class="feature-item">
           <img src="http://placehold.it/150x100">
-          <h2>приложения</h2>
+          <b>приложения</b>
           <p>Покорите топ-10 приложений<br>в AppStore и Google Play</p>
           <a href="#" class="btn">заказать</a>
-        </article> 
+        </section> 
 
-        <article class="feature-item">
+        <section class="feature-item">
           <img src="http://placehold.it/150x100">
-          <h2>призентации</h2>
+          <b>призентации</b>
           <p>Вы даже не подозреваете,<br>насколько вы изумительны!</p>
           <a href="#" class="btn">заказать</a>
-        </article>
+        </section>
       </div>
       
       <hr>
@@ -65,21 +71,25 @@
       <div class="about-us">
         <h2>Мы-маленькая, но гордая дизайн-студия из Краснодара.</h2>
         <p>Исповедуем принципы минимализма и чистоты.Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
-        <h3>выполняем заказы на разработку:</h3>
-      </div>  
-      <div class="red-line">
-        <p>Веб-сайтов любой сложности</p>
-        <p>Мобильных приложений для iOS и Android</p>
-        <p>Слайдшоу и видео для корпоративных презентаций</p>
       </div>
-      <div class="how-we-work">
-        <img src="http://placehold.it/100x100">            
-        <h3>как мы работаем:</h3>
-        <div class="red-line">
-          <p>С самоотдачей 146%</p>
-          <p>Соблюдая сроки на 100%</p>
-          <p>По предоплате 50%</p>
-        </div>
+      <div class="logo-body">
+        <img src="http://placehold.it/150x100">
+      </div>
+      <div class="our-description float-left">
+        <h2>выполняем заказы на разработку:</h2>
+        <ul>
+          <li>Веб-сайтов любой сложности</li>
+          <li>Мобильных приложений для iOS и Android</li>
+          <li>Слайдшоу и видео для корпоративных презентаций</li>
+        </ul>
+      </div>
+      <div class="our-description">          
+        <h2>как мы работаем:</h2>
+        <ul>
+          <li>С самоотдачей 146%</li>
+          <li>Соблюдая сроки на 100%</li>
+          <li>По предоплате 50%</li>
+        </ul>
       </div>
 
       <hr>
@@ -89,21 +99,30 @@
         <img src="http://placehold.it/70x50">
         <img src="http://placehold.it/150x100">
       </div>   
-        
-      <hr>
+    </main>
 
+    <footer class="main-footer">
       <div class="map">
-        <img src="http://placehold.it/500x200">
+        <div class="contacts">
+          <h2 class="contacts-name">NЁRDS design studio</h2>
+          <p>191186, Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д.19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <a class="btn" href="#">Напишите Нам</a>
+        </div>
       </div>
-      <footer class="main-footer">
+      
+      <div class="container">
         <div class="social-links">
           <a class="social-btn social-btn-vk"></a>   
           <a class="social-btn social-btn-fb"></a>   
           <a class="social-btn social-btn-ins"></a> 
-        </div>  
-        <h2 class="tagline">Давайте дружить, это выгoдно!</h2>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
-      </footer>
-    </div>
+        </div>
+        <div class="be-friends"> 
+          <h2>Давайте дружить, это выгoдно!</h2>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>       
