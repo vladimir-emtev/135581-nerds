@@ -1,0 +1,31 @@
+body {
+    font-family: RobotoMedium, 'Times New Roman';
+}
+.service-title {
+	font-size: 18px;
+	line-height: 30px;
+	color: #000000;	
+}
+.main-menu a {
+	font-size: 14px;
+	line-height: 30px;
+	color: #000000;
+}
+.sorting {
+	font-size: 12px;
+	line-height: 18px;
+	color: #cacaca;
+}
+
+.slide-header {
+	font-size: 36px;
+	line-height: 36px;
+	color: #000000;
+}
+
+.contact-name {
+	font-size: 16px;
+	line-height: 30px;
+	color: #000000;
+	text-transform: capitalize;
+}
