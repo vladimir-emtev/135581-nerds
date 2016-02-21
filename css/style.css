@@ -1,5 +1,7 @@
 body {
-    font-family: RobotoMedium, 'Times New Roman';
+    font-family: RobotoMedium, Arial;
+    margin: 0;
+    padding: 0;
 }
 .service-title {
 	font-size: 18px;
@@ -7,9 +9,7 @@ body {
 	color: #000000;	
 }
 .main-menu a {
-	font-size: 14px;
-	line-height: 30px;
-	color: #000000;
+
 }
 .sorting {
 	font-size: 12px;
@@ -51,8 +51,45 @@ body {
 .main-menu {
     float: right;
 }
-.main-menu ul li {
+.main-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+}
+.main-menu li {
     display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.main-menu a {
+	font-size: 14px;
+	line-height: 30px;
+	color: #000000;
+    display: block;
+    padding: 26px 22px 0;
+    text-decoration: none;
+}
+.main-menu .cart-link {
+    padding-left: 72px;
+    position: relative;
+}
+.main-menu .cart-link::before {
+    content: "";
+    position: absolute;
+    top: 34px;
+    left: 42px;
+    background: url("../img/cart-icon.png") no-repeat;
+    width: 15px;
+    height: 15px;
+}
+.main-menu a:hover {
+    color: #fb565a;
+}
+.main-menu .cart-link:hover::before {
+    background: url("../img/cart-icon-red.png") no-repeat;
 }
 .top-slider {
     clear: both;
@@ -89,15 +126,9 @@ body {
 .about-us-home .right {
     float: right;
 }
-.logos {
-    min-height: 170px;
-    border-top: 2px solid #eeeeee;
-    border-bottom: 2px solid #eeeeee;
-}
 .map {
     background-image: url("../img/map.jpg");
     min-height: 415px;
-    margin-bottom: 75px;
 }
 .contacts {
     background-color: #ffffff;
@@ -105,13 +136,15 @@ body {
     margin-top: 80px;
 }
 .social-links {
-    float: left;
+    display: inline-block;
     width: 240px;
     margin-right: 70px;
+    vertical-align: middle;
 }
 .be-friends {
-    float: left;
+    display: inline-block;
     width: 550px;
+    vertical-align: middle;
 }
 .catalog-header {
     clear: both;
@@ -138,4 +171,38 @@ body {
 }
 .catalog-item:nth-child(even) {
     margin-right: 0;
+}
+.logos {
+    margin: 0;
+    margin-bottom: 80px;
+    padding: 30px 10px;
+    list-style: none;
+    font-size: 0;
+    //min-height: 170px;
+    border-top: 2px solid #eeeeee;
+    border-bottom: 2px solid #eeeeee;
+}
+.logos li {
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    margin-right: 116px;
+    width: 209px;
+    //background-color: red;
+}
+.logos img {
+    margin: 0 auto;
+}
+.logos li:nth-child(3n) {
+    margin-right: 0;
+}
+.social-icon {
+    margin-right: 21px;
+}
+.social-icon:last-child {
+    margin-right: 0;
+}
+.footer {
+    padding: 75px 0;
 }
