@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         <link href="css/style.css" rel="stylesheet">
         <title>Нёрдс домашняя</title>
     </head>
@@ -28,7 +29,7 @@
             <div class="filter">
                 <form>
                     <fieldset class="filter-price">
-                        <legend>Стоимость</legend>
+                        <legend>Стоимость:</legend>
                         <div class="range-controls">
                             <div class="scale">
                                 <div class="bar"></div>
@@ -37,16 +38,16 @@
                             <div class="toggle max-toggle"></div>
                         </div>
                         <div class="price-controls">
-            	       	    от <input class="min-price" type="text" value="0">
-                            до <input class="max-price" type="text" value="15 000">
+            	       	    ОТ <input class="min-price" type="text" value="0">
+                            ДО <input class="max-price" type="text" value="15 000">
                         </div>
                     </fieldset>
                     <fieldset class="filter-layout">
-                        <legend>Сетка</legend>
+                        <legend>Сетка:</legend>
                         <ul>
                             <li>
                                 <input name="site-layout" type="radio" value="adaptive" id="adaptive-layout">
-                                <label for="adaptive-layout">адаптивная</label>
+                                <label for="adaptive-layout">Адаптивная</label>
                             </li>
                             <li>
                                 <input name="site-layout" type="radio" value="fixed" id="fixed-layout">
@@ -59,11 +60,11 @@
                         </ul>
                     </fieldset>
                     <fieldset class="filter-features">
-                        <legend>Особенности</legend>
+                        <legend>Особенности:</legend>
                         <ul class="features-list"> 
                             <li>
                                 <input type="checkbox" id="item-1" checked>
-                                <label for="item-1">слайдер</label>
+                                <label for="item-1">Слайдер</label>
                             </li>
                             <li>
                                 <input type="checkbox" id="item-2">
@@ -89,11 +90,13 @@
             <div class="content">
                 <div class="sort-links">
                     <span>сортировать:</span>
-                    <a href="#" class="sorting">по цене</a>
+                    <a href="#" class="sorting active">по цене</a>
                     <a href="#" class="sorting">по типу</a>
                     <a href="#" class="sorting">по функционалу</a>
-                    <a href="#" class="sorting-down"></a>
-                    <a href="#" class="sorting-up"></a>
+                    <div class="sorting-arrows">
+                        <a href="#" class="sorting-down active"></a>
+                        <a href="#" class="sorting-up"></a>
+                    </div>
                 </div>
                 <section class="catalog clearfix">
                     <article class="catalog-item">
@@ -105,6 +108,11 @@
                         <div class="thumbnail">
                             <img src="img/aviator.jpg">
                         </div>
+                        <section class="catalog-item-description">
+                            <h2>AVIATOR</h2>
+                            <p>Одностраничный макет с авторским дизайном</p>
+                            <a href="#" class="btn absolute">8000 Р.</a>
+                        </section>
                     </article>
                     <article class="catalog-item">
                         <div class="catalog-item-head">
@@ -115,6 +123,11 @@
                         <div class="thumbnail">
                             <img src="img/sunset.jpg">
                         </div>
+                        <section class="catalog-item-description">
+                            <h2>SUNSET</h2>
+                            <p>Интернет-магазин с личным кабинетом</p>
+                            <a href="#" class="btn absolute">10000 Р.</a>
+                        </section>
                     </article>
                     
                     <article class="catalog-item">
@@ -126,6 +139,11 @@
                         <div class="thumbnail">
                             <img src="img/forte.jpg">
                         </div>
+                        <section class="catalog-item-description">
+                            <h2>FORTE</h2>
+                            <p>Отличный макет для личного блога</p>
+                            <a href="#" class="btn absolute">5000 Р.</a>
+                        </section>
                     </article>
                     <article class="catalog-item">
                         <div class="catalog-item-head">
@@ -136,6 +154,11 @@
                         <div class="thumbnail">
                             <img src="img/modern.jpg">
                         </div>
+                        <section class="catalog-item-description">
+                            <h2>MODERN ORGANIC THAI</h2>
+                            <p>Сайт для ресторана быстрого питания</p>
+                            <a href="#" class="btn absolute">12000 Р.</a>
+                        </section>
                     </article>
                     
                     <article class="catalog-item">
@@ -147,6 +170,11 @@
                         <div class="thumbnail">
                             <img src="img/avenue.jpg">
                         </div>
+                        <section class="catalog-item-description">
+                            <h2>AVENUE</h2>
+                            <p>Макет для блога о путешествиях</p>
+                            <a href="#" class="btn absolute">8000 Р.</a>
+                        </section>
                     </article>
                     <article class="catalog-item">
                         <div class="catalog-item-head">
@@ -157,13 +185,18 @@
                         <div class="thumbnail">
                             <img src="img/dovetail.jpg">
                         </div>
+                        <section class="catalog-item-description">
+                            <h2>DOVETAIL</h2>
+                            <p>Интернет-магазин с галереей товаров</p>
+                            <a href="#" class="btn absolute">14000 Р.</a>
+                        </section>
                     </article>
                 </section>
                 <div class="pagination">
-                    <a href="#">1</a>
+                    <a href="#" class="active">1</a>
                     <a href="#">2</a>
                     <a href="#">3</a>
-                    <a href="#">следующая</a>
+                    <a href="#" class="next">СЛЕДУЮЩАЯ</a>
                 </div>
             </div>
         </main>
