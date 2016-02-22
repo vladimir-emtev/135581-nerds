@@ -124,20 +124,6 @@ body {
     background: url("../img/spritesheet.png") no-repeat;
     background-position: -5px -30px;
 }
-/*.top-slider {
-    clear: both;
-}
-.slide-content {
-    float: left;
-    width: 470px;
-    //background-color: red;
-}
-.slide-image {
-    float: right;
-}
-.slide-header {
-    margin-bottom: 15px;
-}*/
 .our-services {
     margin-bottom: 80px;
 }
@@ -358,20 +344,6 @@ legend {
     line-height: 22px;
     color: #283136;
 }
-/*
-.min-price, .max-price {
-    font-size: 16px;
-    line-height: 22px;
-    color: #283136;
-    font-family: 'Roboto', 'Arial', sans-serif;
-    width: 80px;
-    height: 38px;
-    text-align: center;
-    background-color: #f1f1f1;
-    border-radius: 2px;
-    outline: none;
-    border: none;
-}*/
 .content {
     float: left;
     margin-bottom: 80px;
@@ -394,7 +366,6 @@ legend {
     background-color: #f1f1f1;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
-    //padding-top: 30px;
 }
 .catalog-item:hover {
     background-color: #797979;
@@ -411,9 +382,9 @@ legend {
     width: 10px;
 	height: 10px;
 	background: #ffffff;
-	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
-	border-radius: 5px;
+	   -moz-border-radius: 5px;
+	        border-radius: 5px;
 	margin-right: 8px;
 }
 .catalog-item:hover>.catalog-item-description {
@@ -462,7 +433,6 @@ legend {
     padding: 30px 10px;
     list-style: none;
     font-size: 0;
-    //min-height: 170px;
     border-top: 2px solid #eeeeee;
     border-bottom: 2px solid #eeeeee;
 }
@@ -473,7 +443,6 @@ legend {
     padding-bottom: 5px;
     margin-right: 116px;
     width: 209px;
-    //background-color: red;
 }
 .logos img {
     margin: 0 auto;
@@ -493,9 +462,9 @@ legend {
     vertical-align: top;
     font-size: 0;
     background-color: #e1e1e1;
-    -moz-border-radius: 32px;
-	-webkit-border-radius: 32px;
-	border-radius: 32px;
+    -webkit-border-radius: 32px;
+       -moz-border-radius: 32px;
+	        border-radius: 32px;
 }
 .social-icon:last-child {
     margin-right: 0;
@@ -622,7 +591,9 @@ legend {
     line-height: 18px;
     text-decoration: none;
     border: 2px solid #f1f1f1;
-    border-radius: 2px;
+    -webkit-border-radius: 2px;
+       -moz-border-radius: 2px;
+            border-radius: 2px;
     margin-right: 10px;
 }
 .pagination a:hover {
@@ -648,212 +619,310 @@ legend {
 }
 
 .range-filter {
-  width: 240px;
-  margin: 10px auto; /* для демонстрации */
+    width: 240px;
+    margin: 10px auto; 
 }
 
 .range-controls {
-  position: relative;
-  height: 41px;
-  padding-top: 39px;
-  padding-right: 20px;
-  padding-left: 20px;
-  margin-bottom: 15px;
-  border-radius: 5px;
-  background: #f1f1f1;
+    position: relative;
+    height: 41px;
+    padding-top: 39px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+    background: #f1f1f1;
 }
 
 .range-controls .scale {
-  height: 2px;
-  background: #d7dcde;
+    height: 2px;
+    background: #d7dcde;
 }
 
 .range-controls .bar {
-  width: 70%;
-  height: 2px;
-  background: #00ca74;
+    width: 70%;
+    height: 2px;
+    background: #00ca74;
 }
 .range-controls .toggle {
-  position: absolute;
-  top: 30px;
-  left: 0px;
-  width: 4px;
-  height: 4px;
-  cursor: pointer;
-  border: 8px solid #fff;
-  border-radius: 50%;
-  background: #ababab;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    width: 4px;
+    height: 4px;
+    cursor: pointer;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    background: #ababab;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
 }
 
 .range-controls .toggle-min {
-  left: 20px;
+    left: 20px;
 }
 
 .range-controls .toggle-max {
-  left: 145px;
+    left: 145px;
 }
 
 .price-controls {
-  font-size: 0;
+    font-size: 0;
 }
 
 .price-controls label {
-  font-size: 16px;
-  display: inline-block;
-  width: 50%;
+    font-size: 16px;
+    display: inline-block;
+    width: 50%;
 }
 
 .max-price {
-  text-align: right;
+    text-align: right;
 }
 .price-controls input {
-  font-family: 'Roboto', 'Arial', sans-serif;
-  font-size: 16px;
-  width: 60px;
-  margin-left: 10px;
-  padding: 8px 10px;
-  text-align: center;
-  color: #283136;
-  border: none;
-  border-radius: 5px;
-  outline: none;
-  background: #f1f1f1;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 16px;
+    width: 60px;
+    margin-left: 10px;
+    padding: 8px 10px;
+    text-align: center;
+    color: #283136;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: #f1f1f1;
 }
 
 .slider {
-  position: relative;
+    position: relative;
 
-  width: 880px;
-  min-height: 310px;
-  margin: 0 auto;
-  overflow: hidden;
+    width: 880px;
+    min-height: 310px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .slide {
-  position: absolute;
-  top: 0;
-  left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 
-  width: 100%;
-  height: 310px;
+    width: 100%;
+    height: 310px;
 
-  background-repeat: no-repeat;
-  background-position: 100% 10px;
+    background-repeat: no-repeat;
+    background-position: 100% 10px;
 
-  -webkit-transition: left 0.3s ease;
-     -moz-transition: left 0.3s ease;
-          transition: left 0.3s ease;
+    -webkit-transition: left 0.3s ease;
+       -moz-transition: left 0.3s ease;
+            transition: left 0.3s ease;
 }
 
 .slider input[type="radio"] {
-  display: none;
+    display: none;
 }
 
 .slider-controls {
-  position: absolute;
-  bottom: 95px;
-  left: 50%;
-  z-index: 10;
+    position: absolute;
+    bottom: 95px;
+    left: 50%;
+    z-index: 10;
 
-  width: 200px;
-  margin-left: -100px;
+    width: 200px;
+    margin-left: -100px;
 
-  text-align: center;
+    text-align: center;
 }
 
 .slider-controls label {
-  display: inline-block;
-  width: 4px;
-  height: 4px;
-  margin: 0 3px;
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin: 0 3px;
 
-  vertical-align: top;
-
-  background: #ffffff;
-  border: 3px solid white;
-  border-radius: 50%;
-  cursor: pointer;
+    vertical-align: top;
+    background: #ffffff;
+    border: 3px solid white;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 .slide-text {
-  width: 500px;
-  padding: 30px 0;
+    width: 500px;
+    padding: 30px 0;
 }
 
 .slide-title {
-  font-weight: 500;
-  font-size: 36px;
+    font-weight: 500;
+    font-size: 36px;
 }
 
 .slide p {
-  font-weight: 500;
-  line-height: 22px;
-  color: #283136;
+    font-weight: 500;
+    line-height: 22px;
+    color: #283136;
 }
 
 .slide .btn {
-  display: block;
-  width: 220px;
-  margin-top: 25px;
-
-  font-weight: 300;
-  font-size: 12px;
-  text-align: center;
-  color: #ffffff;
-  text-transform: uppercase;
-  text-decoration: none;
-
-  border-radius: 3px;
+    display: block;
+    width: 220px;
+    margin-top: 25px;
+    font-weight: 300;
+    font-size: 12px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 3px;
 }
 
 .slide:nth-child(1) {
-  background-image: url("../img/slider-bg.png");
+    background-image: url("../img/slider-bg.png");
 }
 
 .slide:nth-child(2) {
-  background-image: url("../img/slider-bg-2.png");
+    background-image: url("../img/slider-bg-2.png");
 }
 
 .slide:nth-child(3) {
-  background-image: url("../img/slider-bg-3.png");
+    background-image: url("../img/slider-bg-3.png");
 }
 
 #btn-1:checked ~ .slides .slide:nth-child(1) {
-  left: 0;
+    left: 0;
 }
 
 #btn-1:checked ~ .slides .slide:nth-child(2),
 #btn-1:checked ~ .slides .slide:nth-child(3) {
-  left: 880px;
+    left: 880px;
 }
 
 #btn-2:checked ~ .slides .slide:nth-child(1) {
-  left: -880px;
+    left: -880px;
 }
 
 #btn-2:checked ~ .slides .slide:nth-child(2) {
-  left: 0;
+    left: 0;
 }
 
 #btn-2:checked ~ .slides .slide:nth-child(3) {
-  left: -880px;
+    left: -880px;
 }
 
 #btn-3:checked ~ .slides .slide:nth-child(1) {
-  left: -880px;
+    left: -880px;
 }
 
 #btn-3:checked ~ .slides .slide:nth-child(2) {
-  left: -880px;
+    left: -880px;
 }
 
 #btn-3:checked ~ .slides .slide:nth-child(3) {
-  left: 0;
+    left: 0;
 }
 
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
 #btn-2:checked ~ .slider-controls label[for="btn-2"],
 #btn-3:checked ~ .slider-controls label[for="btn-3"] {
-  background: #c1c1c1;
+    background: #c1c1c1;
+}
+.modal-block {
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    width: 630px;
+    height: 420px;
+    background-color: #ffffff;
+    font-size: 16px;
+    line-height: 18px;
+    box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
+    display: none;
+}
+.modal-block-show {
+    display: block;
+}
+.modal-container {
+    width: 460px;
+    margin: 50px auto;
+}
+.modal-block-close {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 40px;
+	height: 40px;
+	background: red;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	font-size: 0;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+}
+.modal-block-close::before, .modal-block-close::after {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 10px;
+    width: 20px;
+    height: 4px;
+    background-color: #ffffff;
+    border-radius: 1px;
+}
+.modal-block-close::before {
+    transform: rotate(45deg);
+}
+.modal-block-close::after {
+    transform: rotate(-45deg);
+}
+.modal-block .btn {
+    width: 100%;
+}
+.modal-block label {
+    display: inline-block;
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 18px;
+}
+.modal-input {
+    display: inline-block;
+    width: 220px;
+    margin-bottom: 25px;
+}
+.modal-input:first-child {
+    margin-right: 20px;
+}
+.contact-form {
+    font-size: 0;
+}
+.modal-input input {
+    border: 2px solid #d7dcde;
+    border-radius: 3px;
+    width: 200px;
+    outline: none;
+}
+.modal-input input[type="text"] {
+    padding: 0px;
+    height: 34px;
+    padding-left: 14px;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.modal-textarea textarea {
+    width: 428px;
+    height: 110px;
+    border: 2px solid #d7dcde;
+    border-radius: 3px;
+    padding: 9px 14px;
+    margin-bottom: 48px;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
 }

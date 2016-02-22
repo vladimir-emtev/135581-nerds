@@ -10,7 +10,7 @@
         <header class="main-header">
             <div class="container">
                 <div class="main-logo">
-                    <a href="#"><img src="img/logo.png"></a>
+                    <a href="#"><img src="img/logo.png" alt="Нёрдс"></a>
                 </div>
                 <nav class="main-menu">
                     <ul>
@@ -108,7 +108,7 @@
                             <span class="little-circle"></span>
                         </div>
                         <div class="thumbnail">
-                            <img src="img/aviator.jpg">
+                            <img src="img/aviator.jpg" alt="Aviator">
                         </div>
                         <section class="catalog-item-description">
                             <h2><a href="#">AVIATOR</a></h2>
@@ -123,7 +123,7 @@
                             <span class="little-circle"></span>
                         </div>
                         <div class="thumbnail">
-                            <img src="img/sunset.jpg">
+                            <img src="img/sunset.jpg" alt="Sunset">
                         </div>
                         <section class="catalog-item-description">
                             <h2><a href="#">SUNSET</a></h2>
@@ -139,7 +139,7 @@
                             <span class="little-circle"></span>
                         </div>
                         <div class="thumbnail">
-                            <img src="img/forte.jpg">
+                            <img src="img/forte.jpg" alt="Forte">
                         </div>
                         <section class="catalog-item-description">
                             <h2><a href="#">FORTE</a></h2>
@@ -154,7 +154,7 @@
                             <span class="little-circle"></span>
                         </div>
                         <div class="thumbnail">
-                            <img src="img/modern.jpg">
+                            <img src="img/modern.jpg" alt="Modern">
                         </div>
                         <section class="catalog-item-description">
                             <h2><a href="#">MODERN ORGANIC THAI</a></h2>
@@ -170,7 +170,7 @@
                             <span class="little-circle"></span>
                         </div>
                         <div class="thumbnail">
-                            <img src="img/avenue.jpg">
+                            <img src="img/avenue.jpg" alt="Avenue">
                         </div>
                         <section class="catalog-item-description">
                             <h2><a href="#">AVENUE</a></h2>
@@ -185,7 +185,7 @@
                             <span class="little-circle"></span>
                         </div>
                         <div class="thumbnail">
-                            <img src="img/dovetail.jpg">
+                            <img src="img/dovetail.jpg" alt="Dovetail">
                         </div>
                         <section class="catalog-item-description">
                             <h2><a href="#">DOVETAIL</a></h2>
@@ -210,7 +210,7 @@
                         <p>191186, Санкт-Петербург,<br>
                         ул. Б. Конюшенная, д.19/8</p>
                         <p>тел. +7 (812) 275-75-75</p>
-                        <a class="btn red-btn" href="#">Напишите Нам</a>
+                        <a class="btn red-btn write-us" href="#">Напишите Нам</a>
                     </div>
                 </div>
             </div>
@@ -225,6 +225,41 @@
                     <p>Скидка 10% для друзей из социальных сетей.</p>
                 </div>
             </div>
+            <div class="modal-block">
+                <button type="button" title="Закрыть" class="modal-block-close">Закрыть</button>
+                <div class="modal-container">
+                    <form class="contact-form">
+                        <div class="modal-input">
+                            <label for="name">Ваше имя:</label>
+                            <input type="text" name="name" id="name" placeholder="представьтесь, пожалуйста">
+                        </div>
+                        <div class="modal-input">
+                            <label for="email">Ваш e-mail:</label>
+                            <input type="text" name="email" id="email" placeholder="для отправки ответа">
+                        </div>
+                        <div class="modal-textarea">
+                            <label for="text">Текст письма:</label>
+                            <textarea name="text" id="text">В СВОБОДНОЙ ФОРМЕ</textarea>
+                        </div>
+                        <button type="submit" class="btn red-btn">ОТПРАВИТЬ</button>
+                    </form>
+                </div>
+            </div>
         </footer>
+        <script>
+            var writeUs = document.querySelector(".write-us")
+            var popup = document.querySelector(".modal-block");
+            var close = document.querySelector(".modal-block-close");
+            
+            writeUs.addEventListener("click", function(event) {
+                event.preventDefault();
+                popup.classList.add("modal-block-show");
+            });
+            
+            close.addEventListener("click", function(event) {
+                event.preventDefault();
+                popup.classList.remove("modal-block-show");
+            });
+        </script>
     </body>
 </html>

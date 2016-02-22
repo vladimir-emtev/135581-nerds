@@ -11,7 +11,7 @@
         <header class="main-header">
             <div class="container">
                 <div class="main-logo">
-                    <a href="#"><img src="img/logo.png"></a>
+                    <a href="#"><img src="img/logo.png" alt="Нёрдс"></a>
                 </div>
                 <nav class="main-menu">
                     <ul>
@@ -62,19 +62,19 @@
         <main class="container">
             <div class="our-services clearfix">
                 <article class="service">
-                    <img src="img/laptop.jpg">
+                    <img src="img/laptop.jpg" alt="Веб-сайты">
                     <h1 class="service-title">ВЕБ-САЙТЫ</h1>
                     <p class="service-description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
                     <a href="#" class="btn red-btn">Заказать</a>
                 </article>
                 <article class="service">
-                    <img src="img/iphones.jpg">
+                    <img src="img/iphones.jpg" alt="Приложения">
                     <h1 class="service-title">ПРИЛОЖЕНИЯ</h1>
                     <p class="service-description">Покорите топ-10 приложений в AppStore и Google Play</p>
                     <a href="#" class="btn green-btn">Заказать</a>
                 </article>
                 <article class="service">
-                    <img src="img/chart.jpg">
+                    <img src="img/chart.jpg" alt="Презентации">
                     <h1 class="service-title">Презентации</h1>
                     <p class="service-description">Вы даже не подозреваете на сколько вы изумительны!</p>
                     <a href="#" class="btn yellow-btn">Заказать</a>
@@ -100,7 +100,7 @@
                     </section>
                 </div>
                 <div class="right">
-                    <div class="logo-home"><img src="img/logo-2.png"></div>
+                    <div class="logo-home"><img src="img/logo-2.png" alt="Нёрдс"></div>
                     <div class="since">Since 2004</div>
                     <section class="what-we-do">
                         <h3>Как мы работаем:</h3>
@@ -113,9 +113,9 @@
                 </div>
             </div>
             <ul class="logos">
-                <li><img src="img/glukhanko-icon.png"></li>
-                <li><img src="img/academy.png"></li>
-                <li><img src="img/borodinsky.png"></li>
+                <li><img src="img/glukhanko-icon.png" alt="Glukhanko"></li>
+                <li><img src="img/academy.png" alt="HTML Academy"></li>
+                <li><img src="img/borodinsky.png" alt="Borodinsky"></li>
                 
             </ul>
         </main>
@@ -127,7 +127,7 @@
                         <p>191186, Санкт-Петербург,<br>
                         ул. Б. Конюшенная, д.19/8</p>
                         <p>тел. +7 (812) 275-75-75</p>
-                        <a class="btn red-btn" href="#">Напишите Нам</a>
+                        <a class="btn red-btn write-us" href="#">Напишите Нам</a>
                     </div>
                 </div>
             </div>
@@ -142,6 +142,41 @@
                     <p>Скидка 10% для друзей из социальных сетей.</p>
                 </div>
             </div>
+            <div class="modal-block">
+                <button type="button" title="Закрыть" class="modal-block-close">Закрыть</button>
+                <div class="modal-container">
+                    <form class="contact-form">
+                        <div class="modal-input">
+                            <label for="name">Ваше имя:</label>
+                            <input type="text" name="name" id="name" placeholder="представьтесь, пожалуйста">
+                        </div>
+                        <div class="modal-input">
+                            <label for="email">Ваш e-mail:</label>
+                            <input type="text" name="email" id="email" placeholder="для отправки ответа">
+                        </div>
+                        <div class="modal-textarea">
+                            <label for="text">Текст письма:</label>
+                            <textarea name="text" id="text">В СВОБОДНОЙ ФОРМЕ</textarea>
+                        </div>
+                        <button type="submit" class="btn red-btn">ОТПРАВИТЬ</button>
+                    </form>
+                </div>
+            </div>
         </footer>
+        <script>
+            var writeUs = document.querySelector(".write-us")
+            var popup = document.querySelector(".modal-block");
+            var close = document.querySelector(".modal-block-close");
+            
+            writeUs.addEventListener("click", function(event) {
+                event.preventDefault();
+                popup.classList.add("modal-block-show");
+            });
+            
+            close.addEventListener("click", function(event) {
+                event.preventDefault();
+                popup.classList.remove("modal-block-show");
+            });
+        </script>
     </body>
 </html>
