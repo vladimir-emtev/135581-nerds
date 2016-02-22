@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         <link href="css/style.css" rel="stylesheet">
-        <title>Нёрдс домашняя</title>
+        <title>Магазин</title>
     </head>
     <body>
         <header class="main-header">
@@ -16,7 +16,7 @@
                     <ul>
                         <li><a href="#">Студия</a></li>
                         <li><a href="#">Клиенты</a></li>
-                        <li><a href="#">Магазин</a></li>
+                        <li><a href="#" class="active">Магазин</a></li>
                         <li><a href="#">Контакты</a></li>
                         <li><a href="#" class="cart-link">Корзина</a></li>
                     </ul>
@@ -30,16 +30,18 @@
                 <form>
                     <fieldset class="filter-price">
                         <legend>Стоимость:</legend>
-                        <div class="range-controls">
-                            <div class="scale">
-                                <div class="bar"></div>
+                        <div class="range-filter">
+                            <div class="range-controls">
+                                <div class="scale">
+                                    <div class="bar"></div>
+                                </div>
+                                <div class="toggle toggle-min"></div>
+                                <div class="toggle toggle-max"></div>
                             </div>
-                            <div class="toggle min-toggle"></div>
-                            <div class="toggle max-toggle"></div>
-                        </div>
-                        <div class="price-controls">
-            	       	    ОТ <input class="min-price" type="text" value="0">
-                            ДО <input class="max-price" type="text" value="15 000">
+                            <div class="price-controls">
+                                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                            </div>
                         </div>
                     </fieldset>
                     <fieldset class="filter-layout">
@@ -84,7 +86,7 @@
                             </li>
         		    	</ul>
                     </fieldset>
-                    <button class="btn" type="submit">Показать</button>
+                    <button class="btn grey-btn" type="submit">Показать</button>
                 </form>
             </div>
             <div class="content">
@@ -109,9 +111,9 @@
                             <img src="img/aviator.jpg">
                         </div>
                         <section class="catalog-item-description">
-                            <h2>AVIATOR</h2>
+                            <h2><a href="#">AVIATOR</a></h2>
                             <p>Одностраничный макет с авторским дизайном</p>
-                            <a href="#" class="btn absolute">8000 Р.</a>
+                            <a href="#" class="btn absolute red-btn">8000 Р.</a>
                         </section>
                     </article>
                     <article class="catalog-item">
@@ -124,9 +126,9 @@
                             <img src="img/sunset.jpg">
                         </div>
                         <section class="catalog-item-description">
-                            <h2>SUNSET</h2>
+                            <h2><a href="#">SUNSET</a></h2>
                             <p>Интернет-магазин с личным кабинетом</p>
-                            <a href="#" class="btn absolute">10000 Р.</a>
+                            <a href="#" class="btn absolute red-btn">10000 Р.</a>
                         </section>
                     </article>
                     
@@ -140,9 +142,9 @@
                             <img src="img/forte.jpg">
                         </div>
                         <section class="catalog-item-description">
-                            <h2>FORTE</h2>
+                            <h2><a href="#">FORTE</a></h2>
                             <p>Отличный макет для личного блога</p>
-                            <a href="#" class="btn absolute">5000 Р.</a>
+                            <a href="#" class="btn absolute red-btn">5000 Р.</a>
                         </section>
                     </article>
                     <article class="catalog-item">
@@ -155,9 +157,9 @@
                             <img src="img/modern.jpg">
                         </div>
                         <section class="catalog-item-description">
-                            <h2>MODERN ORGANIC THAI</h2>
+                            <h2><a href="#">MODERN ORGANIC THAI</a></h2>
                             <p>Сайт для ресторана быстрого питания</p>
-                            <a href="#" class="btn absolute">12000 Р.</a>
+                            <a href="#" class="btn absolute red-btn">12000 Р.</a>
                         </section>
                     </article>
                     
@@ -171,9 +173,9 @@
                             <img src="img/avenue.jpg">
                         </div>
                         <section class="catalog-item-description">
-                            <h2>AVENUE</h2>
+                            <h2><a href="#">AVENUE</a></h2>
                             <p>Макет для блога о путешествиях</p>
-                            <a href="#" class="btn absolute">8000 Р.</a>
+                            <a href="#" class="btn absolute red-btn">8000 Р.</a>
                         </section>
                     </article>
                     <article class="catalog-item">
@@ -186,9 +188,9 @@
                             <img src="img/dovetail.jpg">
                         </div>
                         <section class="catalog-item-description">
-                            <h2>DOVETAIL</h2>
+                            <h2><a href="#">DOVETAIL</a></h2>
                             <p>Интернет-магазин с галереей товаров</p>
-                            <a href="#" class="btn absolute">14000 Р.</a>
+                            <a href="#" class="btn absolute red-btn">14000 Р.</a>
                         </section>
                     </article>
                 </section>
@@ -208,15 +210,15 @@
                         <p>191186, Санкт-Петербург,<br>
                         ул. Б. Конюшенная, д.19/8</p>
                         <p>тел. +7 (812) 275-75-75</p>
-                        <a class="btn" href="#">Напишите Нам</a>
+                        <a class="btn red-btn" href="#">Напишите Нам</a>
                     </div>
                 </div>
             </div>
             <div class="container footer">
                 <div class="social-links">
-                    <a class="social-icon social-icon-vk"><img src="img/vk-icon.png"></a>   
-                    <a class="social-icon social-icon-fb"><img src="img/fb-icon.png"></a>   
-                    <a class="social-icon social-icon-ins"><img src="img/instagramm-icon.png"></a> 
+                    <a class="social-icon social-icon-vk" href="#">VK</a>   
+                    <a class="social-icon social-icon-fb" href="#">FB</a>   
+                    <a class="social-icon social-icon-ins" href="#">Instagramm</a> 
                 </div>
                 <div class="be-friends"> 
                     <b class="tagline">Давайте дружить, это выгoдно!</b>
