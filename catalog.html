@@ -2,15 +2,16 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-        <link href="css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.min.css" rel="stylesheet">
         <title>Магазин</title>
     </head>
     <body>
         <header class="main-header">
             <div class="container">
                 <div class="main-logo">
-                    <a href="#"><img src="img/logo.png" alt="Нёрдс"></a>
+                    <a href="./index.html"><img src="img/logo.png" alt="Нёрдс" width="139" height="56"></a>
                 </div>
                 <nav class="main-menu">
                     <ul>
@@ -23,9 +24,8 @@
                 </nav>
                 <h1 class="catalog-header">добро пожаловать в магазин готовых макетов</h1>         
             </div>
-        </header>
-        
-        <main class="container clearfix">
+        </header>        
+        <div class="container clearfix">
             <div class="filter">
                 <form>
                     <fieldset class="filter-price">
@@ -39,8 +39,8 @@
                                 <div class="toggle toggle-max"></div>
                             </div>
                             <div class="price-controls">
-                                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                                <label class="min-price">ОТ <input name="min-price" type="text" value="0"></label>
+                                <label class="max-price">ДО <input name="max-price" type="text" value="15000"></label>
                             </div>
                         </div>
                     </fieldset>
@@ -92,9 +92,12 @@
             <div class="content">
                 <div class="sort-links">
                     <span>сортировать:</span>
-                    <a href="#" class="sorting active">по цене</a>
-                    <a href="#" class="sorting">по типу</a>
-                    <a href="#" class="sorting">по функционалу</a>
+                    <ul>
+                        <li><a href="#" class="sorting active">по цене</a></li>
+                        <li><a href="#" class="sorting">по типу</a></li>
+                        <li><a href="#" class="sorting">по функционалу</a></li>
+                    </ul>          
+                                       
                     <div class="sorting-arrows">
                         <a href="#" class="sorting-down active"></a>
                         <a href="#" class="sorting-up"></a>
@@ -102,13 +105,8 @@
                 </div>
                 <section class="catalog clearfix">
                     <article class="catalog-item">
-                        <div class="catalog-item-head">
-                            <span class="little-circle"></span>
-                            <span class="little-circle"></span>
-                            <span class="little-circle"></span>
-                        </div>
                         <div class="thumbnail">
-                            <img src="img/aviator.jpg" alt="Aviator">
+                            <img src="img/aviator.jpg" alt="Aviator" width="240" height="240">
                         </div>
                         <section class="catalog-item-description">
                             <h2><a href="#">AVIATOR</a></h2>
@@ -117,13 +115,8 @@
                         </section>
                     </article>
                     <article class="catalog-item">
-                        <div class="catalog-item-head">
-                            <span class="little-circle"></span>
-                            <span class="little-circle"></span>
-                            <span class="little-circle"></span>
-                        </div>
                         <div class="thumbnail">
-                            <img src="img/sunset.jpg" alt="Sunset">
+                            <img src="img/sunset.jpg" alt="Sunset" width="240" height="240">
                         </div>
                         <section class="catalog-item-description">
                             <h2><a href="#">SUNSET</a></h2>
@@ -133,13 +126,8 @@
                     </article>
                     
                     <article class="catalog-item">
-                        <div class="catalog-item-head">
-                            <span class="little-circle"></span>
-                            <span class="little-circle"></span>
-                            <span class="little-circle"></span>
-                        </div>
                         <div class="thumbnail">
-                            <img src="img/forte.jpg" alt="Forte">
+                            <img src="img/forte.jpg" alt="Forte" width="240" height="240">
                         </div>
                         <section class="catalog-item-description">
                             <h2><a href="#">FORTE</a></h2>
@@ -148,29 +136,18 @@
                         </section>
                     </article>
                     <article class="catalog-item">
-                        <div class="catalog-item-head">
-                            <span class="little-circle"></span>
-                            <span class="little-circle"></span>
-                            <span class="little-circle"></span>
-                        </div>
                         <div class="thumbnail">
-                            <img src="img/modern.jpg" alt="Modern">
+                            <img src="img/modern.jpg" alt="Modern" width="240" height="240">
                         </div>
                         <section class="catalog-item-description">
                             <h2><a href="#">MODERN ORGANIC THAI</a></h2>
                             <p>Сайт для ресторана быстрого питания</p>
                             <a href="#" class="btn absolute red-btn">12000 Р.</a>
                         </section>
-                    </article>
-                    
+                    </article>                    
                     <article class="catalog-item">
-                        <div class="catalog-item-head">
-                            <span class="little-circle"></span>
-                            <span class="little-circle"></span>
-                            <span class="little-circle"></span>
-                        </div>
                         <div class="thumbnail">
-                            <img src="img/avenue.jpg" alt="Avenue">
+                            <img src="img/avenue.jpg" alt="Avenue" width="240" height="240">
                         </div>
                         <section class="catalog-item-description">
                             <h2><a href="#">AVENUE</a></h2>
@@ -179,13 +156,8 @@
                         </section>
                     </article>
                     <article class="catalog-item">
-                        <div class="catalog-item-head">
-                            <span class="little-circle"></span>
-                            <span class="little-circle"></span>
-                            <span class="little-circle"></span>
-                        </div>
                         <div class="thumbnail">
-                            <img src="img/dovetail.jpg" alt="Dovetail">
+                            <img src="img/dovetail.jpg" alt="Dovetail" width="240" height="240">
                         </div>
                         <section class="catalog-item-description">
                             <h2><a href="#">DOVETAIL</a></h2>
@@ -201,7 +173,7 @@
                     <a href="#" class="next">СЛЕДУЮЩАЯ</a>
                 </div>
             </div>
-        </main>
+        </div>
         <footer class="main-footer">
             <div class="map">
                 <div class="container">
@@ -209,8 +181,8 @@
                         <h2 class="contact-name">NЁRDS design studio</h2>
                         <p>191186, Санкт-Петербург,<br>
                         ул. Б. Конюшенная, д.19/8</p>
-                        <p>тел. +7 (812) 275-75-75</p>
-                        <a class="btn red-btn write-us" href="#">Напишите Нам</a>
+                        <p class="last">тел. +7 (812) 275-75-75</p>
+                        <a class="btn red-btn write-us" href="./contact-us.php">Напишите Нам</a>
                     </div>
                 </div>
             </div>
@@ -221,8 +193,8 @@
                     <a class="social-icon social-icon-ins" href="#">Instagramm</a> 
                 </div>
                 <div class="be-friends"> 
-                    <b class="tagline">Давайте дружить, это выгoдно!</b>
-                    <p>Скидка 10% для друзей из социальных сетей.</p>
+                    <p class="tagline">Давайте дружить, это выгoдно!</p>
+                    <p class="discount-message">Скидка 10% для друзей из социальных сетей.</p>
                 </div>
             </div>
             <div class="modal-block">
@@ -246,20 +218,6 @@
                 </div>
             </div>
         </footer>
-        <script>
-            var writeUs = document.querySelector(".write-us")
-            var popup = document.querySelector(".modal-block");
-            var close = document.querySelector(".modal-block-close");
-            
-            writeUs.addEventListener("click", function(event) {
-                event.preventDefault();
-                popup.classList.add("modal-block-show");
-            });
-            
-            close.addEventListener("click", function(event) {
-                event.preventDefault();
-                popup.classList.remove("modal-block-show");
-            });
-        </script>
+        <script src="./js/popup.min.js"></script>
     </body>
 </html>
