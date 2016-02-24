@@ -62,7 +62,7 @@ body {
     text-transform: uppercase;
 }
 .main-menu li:last-child {
-    padding-left: 50px;
+    padding-left: 46px;
 }
 .main-menu a {
 	font-size: 14px;
@@ -74,7 +74,7 @@ body {
     text-decoration: none;
 }
 .main-menu .cart-link {
-    padding-left: 22px;
+    padding-left: 26px;
     position: relative;
     margin: 0;
 }
@@ -224,9 +224,9 @@ body {
     margin: 0 auto;
 }
 .contacts {
-    padding: 25px 20px;
+    padding: 25px 23px;
     background-color: #ffffff;
-    width: 210px;
+    width: 204px;
     margin-top: 89px;
 }
 .contacts h2 {
@@ -239,14 +239,14 @@ body {
     color: #666666;
 }
 .contacts p.last {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
 }
 .contacts p:last-child {
     margin-bottom: 32px;
 }
 .social-links {
     display: inline-block;
-    width: 240px;
+    width: 242px;
     margin-right: 75px;
     vertical-align: top;
 }
@@ -357,7 +357,13 @@ body {
 }
 .filter .filter-price, .filter .filter-layout, .filter .filter-features {
     border: none;
-    margin-bottom: 45px;
+    margin-bottom: 35px;
+}
+.filter .filter-layout {
+    margin-bottom: 25px;
+}
+.filter .filter-features {
+    margin-bottom: 40px;
 }
 .filter fieldset {
     margin: 0;
@@ -368,8 +374,14 @@ body {
     margin: 0;
     padding: 0;
 }
-.filter-layout li {
-
+.filter-layout label, .filter-features label {
+    margin-left: 18px;
+}
+.filter-layout li, .filter-features li {
+    margin-bottom: 20px;
+}
+.filter-layout legend, .filter-features legend {
+    margin-bottom: 15px;
 }
 .filter label {
     color: #283136;
@@ -509,7 +521,7 @@ legend {
 .social-icon {
     width: 62px;
     height: 62px;
-    margin-right: 21px;
+    margin-right: 24px;
     display: inline-block;
     vertical-align: top;
     font-size: 0;
@@ -605,6 +617,7 @@ legend {
 }
 .grey-btn {
     background-color: #f1f1f1;
+    width: 155px;
 }
 .grey-btn:hover {
     background-color: #e5e5e5;
@@ -615,7 +628,7 @@ legend {
     padding-top: 7px;
 }
 .contacts .btn {
-    padding: 10px 54px;
+    padding: 10px 52px;
     width: 100px;
 }
 .contacts .btn:active {
@@ -751,7 +764,7 @@ legend {
     font-size: 16px;
     font-weight: 500;
     width: 60px;
-    margin-left: 10px;
+    margin-left: 6px;
     padding: 8px 10px;
     text-align: center;
     color: #283136;
@@ -834,7 +847,7 @@ legend {
     display: block;
     width: 240px;
     margin-top: 28px;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 12px;
     text-align: center;
     color: #ffffff;
